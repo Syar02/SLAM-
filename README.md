@@ -29,7 +29,7 @@ Useful when:
 |-----------|------|
 | Main board | NVIDIA Jetson Nano 4GB |
 | Camera | USB Fisheye, FOV ≥ 160° |
-| OS | Ubuntu 20.04 (JetPack 4.6) |
+| OS | Ubuntu 22.04 (Humble) |
  
 ---
  
