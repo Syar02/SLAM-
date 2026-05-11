@@ -8,6 +8,8 @@ LDSO/
 dso/
 dso_ros/
 stereo-dso/
+DBow3/
+camera_calibration/
 
 # ===== DATASETS =====
 datasets/
