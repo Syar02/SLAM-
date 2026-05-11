@@ -1,0 +1,49 @@
+%YAML:1.0
+---
+# Kalibrasi kamera FISHEYE untuk ORB-SLAM3
+# Model: KannalaBrandt8 (kb4)
+# Resolusi: 640x480
+# Reprojection error: 4.0949 px
+# Valid frames: 50
+
+# ─── Camera Parameters ────────────────────────────────────────
+Camera.type: "KannalaBrandt8"
+
+Camera.fx: 161.783048
+Camera.fy: 160.542564
+Camera.cx: 316.229125
+Camera.cy: 256.031759
+
+# Distortion parameters Kannala-Brandt (k1,k2,k3,k4)
+Camera.k1: 0.00990724
+Camera.k2: 0.01334516
+Camera.k3: -0.01282049
+Camera.k4: 0.00191134
+
+Camera.width:  640
+Camera.height: 480
+Camera.fps: 30
+
+# Untuk fisheye: crop area valid setelah undistort
+# Sesuaikan jika gambar terlalu banyak black border
+Camera.newWidth:  600
+Camera.newHeight: 450
+
+# ─── ORB Parameters ───────────────────────────────────────────
+ORBextractor.nFeatures:  1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels:    8
+ORBextractor.iniThFAST:  20
+ORBextractor.minThFAST:  7
+
+# ─── Viewer Parameters ────────────────────────────────────────
+Viewer.KeyFrameSize:      0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth:    0.9
+Viewer.PointSize:         2
+Viewer.CameraSize:        0.08
+Viewer.CameraLineWidth:   3
+Viewer.ViewpointX:        0
+Viewer.ViewpointY:        -0.7
+Viewer.ViewpointZ:        -1.8
+Viewer.ViewpointF:        500
