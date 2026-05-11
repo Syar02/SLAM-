@@ -14,45 +14,12 @@
  
 True stereo vision requires two physically separated cameras with a known baseline.
 A fisheye camera wide FOV (≥160°) allows synthesizing two virtual "eyes" from a
-single frame — the horizontal offset between crops acts as the virtual baseline.
+single frame  the horizontal offset between crops acts as the virtual baseline.
  
 Useful when:
 - Only one camera is available on the robot
 - Wide FOV is needed for navigation (indoor, corridor environments)
 - Weight or mounting constraints prevent dual-camera setup
- 
----
- 
-## Pipeline
- 
-```
-Fisheye frame (≥160° FOV)
-        │
-        ▼
-[1] Capture calibration frames     calibration/capture_calib.py
-        │
-        ▼
-[2] Fisheye camera calibration     calibration/calibrate_webcam.py
-    (Kannala-Brandt model)
-        │
-        ▼
-[3] Verify calibration             calibration/cek_pose.py
-        │
-        ▼
-[4] Extract frames from video      calibration/extract_frames.py
-        │
-        ▼
-[5] Generate calibration report    calibration/generate_report.py
-        │
-        ▼
-[6] Undistort → equirectangular    [ coming next ]
-        │
-        ▼
-[7] Virtual stereo split           [ coming next ]
-        │
-        ▼
-[8] ORB-SLAM3 stereo mode          [ coming next ]
-```
  
 ---
  
@@ -127,19 +94,6 @@ fisheye-stereo-slam/
 └── README.md
 ```
  
----
- 
-## Roadmap
- 
-- [x] Calibration pipeline (Kannala-Brandt fisheye model)
-- [ ] Undistort → equirectangular projection
-- [ ] Virtual stereo split (configurable baseline)
-- [ ] ORB-SLAM3 stereo mode integration
-- [ ] Benchmark: monocular DSO vs pseudo-stereo ORB-SLAM3
-- [ ] ROS2 node wrapper
-- [ ] Turtlebot3 Burger integration
- 
----
  
 ## References
  
@@ -149,9 +103,4 @@ fisheye-stereo-slam/
  
 ---
  
-## License
- 
-MIT — see [LICENSE](LICENSE)
- 
----
 *Tested on NVIDIA Jetson Nano · Bengkulu, Indonesia*
