@@ -10,6 +10,7 @@ dso_ros/
 stereo-dso/
 DBow3/
 camera_calibration/
+ORB_SLAM3_Testing_Report_Jetson_Orin.pdf
 
 # ===== DATASETS =====
 datasets/
