@@ -1,0 +1,44 @@
+# ===== THIRD PARTY LIBRARIES =====
+ORB_SLAM2/
+ORB_SLAM3/
+Pangolin/
+g2o/
+glog/
+LDSO/
+dso/
+dso_ros/
+stereo-dso/
+
+# ===== DATASETS =====
+datasets/
+kalibr_data/
+
+# ===== BUILD =====
+build/
+cmake-build-*/
+CMakeFiles/
+
+# ===== BINARIES =====
+*.so
+*.a
+*.o
+*.out
+
+# ===== PYTHON =====
+__pycache__/
+*.pyc
+
+# ===== ARCHIVES =====
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+
+# ===== LOGS =====
+*.log
+
+# ===== VSCODE =====
+.vscode/
+
+# ===== SYSTEM =====
+.DS_Store
