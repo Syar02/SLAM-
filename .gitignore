@@ -14,7 +14,7 @@ ORB_SLAM3_Testing_Report_Jetson_Orin.pdf
 
 # ===== DATASETS =====
 datasets/
-kalibr_data/
+
 
 # ===== BUILD =====
 build/
