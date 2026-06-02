@@ -104,3 +104,6 @@ fisheye-stereo-slam/
 ---
  
 *Tested on NVIDIA Jetson Nano · Bengkulu, Indonesia*
+
+<img width="698" height="522" alt="Screenshot from 2026-05-18 14-03-53" src="https://github.com/user-attachments/assets/a9e47d26-ac3c-488c-8b9e-77a1dcb0ee2b" />
+
